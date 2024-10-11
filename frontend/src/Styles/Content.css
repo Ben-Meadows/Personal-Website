@@ -1,0 +1,154 @@
+/* ProjectCard.css */
+.content-container {
+    padding-top: 600px; /* Add extra padding to push the content down */
+}
+
+.content-title {
+    font-family: 'Poppins', sans-serif; /* Keep the modern font */
+    font-size: 3rem; /* Larger font size for emphasis */
+    font-weight: 700; /* Bold weight */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center the text */
+    margin-bottom: 10px; /* Slightly less margin */
+    padding: 10px 0;
+    background: none; /* Remove gradient background */
+    text-shadow: none; /* Remove shadow for cleaner look */
+}
+.content-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem; /* Smaller subtitle */
+    font-weight: 400; /* Regular weight for subtitle */
+    color: #cccccc; /* Lighter text for contrast */
+    text-align: center;
+    margin-bottom: 40px; /* Spacing below subtitle */
+}
+
+.content-tagline {
+    display: inline-block;
+    background-color: #000; /* Black background for the tag */
+    color: #fff; /* White text */
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 60px; /* Add margin to ensure space between the title and the grid */
+    max-width: 900px;
+    margin-left: 72px; /* This will move the grid 50px to the right */
+}
+  
+  @media screen and (max-width: 768px) {
+    .project-grid {
+      grid-template-columns: 1fr; /* Switch to 1 column on small screens */
+    }
+  }
+.project-card {
+    background-color: #333; /* Dark background */
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Full width within the grid item */
+    height: auto; /* Adjust height based on content */
+    
+  }
+  
+  /* Card hover effect */
+  .project-card:hover {
+    transform: translateY(-5px) scale(1.02); /* Raise and slightly enlarge on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+  }
+  
+  /* Image styling */
+  .project-image {
+    width: 100%;
+    height: 150px; /* Reduced height */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Enlarge image slightly on hover */
+  .project-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Title styling */
+  .project-title {
+    font-size: 1.25rem; /* Slightly smaller font size */
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Description styling */
+  .project-description {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    color: #ddd; /* Lighter text for the description */
+  }
+  
+  /* Tech stack container */
+  .project-techstack {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  
+  /* Tech tag styling */
+  .tech-tag {
+    background-color: #444;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    color: white;
+  }
+  
+  /* Button container */
+  .project-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  /* General button styling */
+  .project-button {
+    background-color: #1b1b1b; /* Primary blue color */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .project-button:hover {
+    background-color: #575757;
+  }
+  
+  /* Source button styling */
+  .project-button.source {
+    background-color: #444; /* Darker color for the source button */
+  }
+  
+  /* Hover effect for source button */
+  .project-button.source:hover {
+    background-color: #555;
+  }
+  
+
+  

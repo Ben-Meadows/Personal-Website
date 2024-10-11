@@ -1,0 +1,217 @@
+/* Existing Styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.main-container {
+  position: relative;
+  width: 1000px; /* Adjusted container width */
+  height: 700px; /* Adjusted height to fit all elements */
+  margin: 0 auto;
+}
+
+/* Top Section (Who am I) */
+.top-section {
+  position: absolute;
+  top: 86px; /* Reduced by 75px from 151px */
+  left: 80px; /* Moved left by 50px */
+  transform: translateX(-50%);
+  width: 510px; /* Adjusted to be slightly smaller */
+  height: 90px; /* Adjusted height for compactness */
+  background-color: #444;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Central square for Name and Title */
+.central-square {
+  position: absolute;
+  top: 185px; /* Reduced by 75px from 250px */
+  left: 390px;
+  transform: translateX(-50%);
+  width: 200px; /* Smaller size to match the desired compact look */
+  height: 200px;
+  background-color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Rectangle (Skills) */
+.left-rectangle {
+  position: absolute;
+  top: 318px; /* Reduced by 75px from 377px */
+  left: 80px; /* Positioned left of the main container */
+  width: 300px;
+  height: 300px; /* Taller than central square to balance design */
+  background-color: #444;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Right Rectangle (Education) */
+.right-rectangle {
+  position: absolute;
+  top: 85px; /* Reduced by 75px from 150px */
+  right: 140px; /* Positioned right of the main container */
+  width: 260px;
+  height: 300px; /* Matches left-rectangle for symmetry */
+  background-color: #444;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Bottom Rectangle (Quote) */
+.bottom-rectangle {
+  position: absolute;
+  top: auto;
+  bottom: 83px; /* Increased by 75px from 20px */
+  left: 390px;
+  transform: translateX(-50%);
+  width: 470px; /* Matches width of top-section */
+  height: 220px;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer or Connect with me */
+.footer {
+  position: absolute;
+  bottom: 0px; /* Increased by 75px from 0px */
+  left: 80px;
+  transform: translateX(-50%);
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.image-container {
+  position: absolute; /* Use relative or absolute to position the element */
+  width: 300px; /* Adjust width as needed */
+  height: 120px; /* Adjust height as needed */
+  top: 165px; /* Positioning the element from the top */
+  left: 80px; /* Positioning the element from the left */
+  overflow: hidden; /* Ensures the image fits within the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Rounded corners to match the other divs */
+  margin: 20px auto; /* Centering and spacing */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Fix navbar to the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the navbar span the entire width */
+  z-index: 100; /* Ensure navbar stays on top */
+  border-bottom: 2px solid #444;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* To prevent content from being hidden under the navbar */
+.app-container {
+  margin-top: 80px; /* This accounts for the height of the fixed navbar */
+}
+
+/* Other styles remain the same... */
+

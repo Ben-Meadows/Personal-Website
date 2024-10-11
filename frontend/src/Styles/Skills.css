@@ -1,0 +1,30 @@
+/* Skills Section Styles */
+  
+  /* Heading Styles */
+  .skills-section h2 {
+    font-family: 'Poppins', sans-serif; /* Uses the imported font */
+    font-size: 1em; /* Adjusted for larger, attractive text */
+    color: #ffffff; /* White color for contrast */
+    margin-bottom: 10px; /* Space below heading */
+    font-weight: 700; /* Makes the heading bold */
+    border-bottom: 1px solid #f39c12; /* Adds a bottom border with color for emphasis */
+    display: inline-block; /* Ensures the border is only as wide as the text */
+    
+  }
+  
+  /* Styling the Skills Grid */
+  .skills-grid {
+    max-width: 800px; /* Constrain the width of the grid */
+    margin: 0 auto; /* Center the grid within the section */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Sets up three columns */
+    gap: 10px; /* Adds space between grid items */
+  }
+  
+  .text-center p {
+    font-family: 'Poppins', sans-serif; /* Matches the font style */
+    color: #d3d3d3; /* Light gray for the text below icons */
+    font-size: 1em;
+    margin-left: -15px;
+  }
+  
