@@ -3,11 +3,10 @@ import React from 'react';
 
 function Quote() {
   return (
-    <section>
-      <h2 className="text-3xl font-semibold mb-5">Education</h2>
-      <ul>
-        <li className="mb-3">
-          <strong>2020-2023</strong> - Computer Science at Cardiff University
+    <section className="quote2-section">
+      <ul className="quote2-content">
+        <li className="quote2-list-item">
+          <strong>Full Stack Developer</strong> 
         </li>
       </ul>
     </section>

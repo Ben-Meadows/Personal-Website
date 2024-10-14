@@ -1,6 +1,6 @@
 /* ProjectCard.css */
 .content-container {
-    padding-top: 600px; /* Add extra padding to push the content down */
+    padding-top: 700px; /* Add extra padding to push the content down */
 }
 
 .content-title {
@@ -96,8 +96,11 @@
   
   /* Description styling */
   .project-description {
+    max-height: 150px;  /* Adjust this height as needed */
+    overflow-y: auto;   /* Enable scrolling when content exceeds height */
+    padding-right: 10px; /* Add padding to avoid scrollbar overlapping */
     font-size: 0.95rem;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
     color: #ddd; /* Lighter text for the description */
   }
   
@@ -149,6 +152,28 @@
   .project-button.source:hover {
     background-color: #555;
   }
+  /* For WebKit browsers (like Chrome, Safari) */
+.project-description::-webkit-scrollbar {
+    width: 6px;
+  }
   
-
+  .project-description::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .project-description::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 10px;
+    border: 2px solid transparent;
+  }
+  
+  .project-description::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+  }
+  
+  /* For Firefox (using scrollbar-gutter and scrollbar-color) */
+  .project-description {
+    scrollbar-width: thin;
+    scrollbar-color: #555 transparent;
+  }
   

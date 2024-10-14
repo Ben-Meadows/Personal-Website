@@ -29,7 +29,9 @@ function ProjectCard({ title, href, description, dates, tags, image, video, link
       <div className="project-header px-2">
         <h3 className="project-title">{title}</h3>
         <time className="font-sans text-xs">{dates}</time>
-        <Markdown className="prose max-w-full text-pretty font-sans text-xs text-muted-foreground">
+        
+        {/* Apply the 'project-description' class for scrolling */}
+        <Markdown className="project-description prose max-w-full text-pretty font-sans text-xs text-muted-foreground">
           {description}
         </Markdown>
       </div>

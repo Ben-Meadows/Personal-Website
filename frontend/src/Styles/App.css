@@ -123,7 +123,7 @@ body, html {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Bottom Rectangle (Quote) */
+
 .bottom-rectangle {
   position: absolute;
   top: auto;
@@ -148,18 +148,81 @@ body, html {
   margin-top: 10px;
 }
 
+/* Image Container */
 .image-container {
-  position: absolute; /* Use relative or absolute to position the element */
+  position: relative; /* Absolute or relative depending on layout */
   width: 300px; /* Adjust width as needed */
   height: 120px; /* Adjust height as needed */
-  top: 165px; /* Positioning the element from the top */
-  left: 80px; /* Positioning the element from the left */
-  overflow: hidden; /* Ensures the image fits within the container */
+  top: 187px; /* Reduced by 75px from 377px */
+  left: -270px; 
+  overflow: hidden; /* Ensures the content fits within the container */
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px; /* Rounded corners to match the other divs */
+  border-radius: 10px; /* Rounded corners */
   margin: 20px auto; /* Centering and spacing */
+  background-color: #104881; /* Blue background */
+  color: white; /* White text */
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.image-container2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+
+/* Scrollable Quote Section */
+.quote2-section {
+  max-height: 100px; /* Adjust height to fit within image container */
+  overflow-y: auto;  /* Scroll when content overflows */
+  width: 100%;  /* Ensures it fits within the container */
+  scrollbar-width: thin; /* Thin scrollbar for Firefox */
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding works with width/height */
+}
+
+/* Quote Text Styles */
+.quote2-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.quote2-content {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.quote2-list-item {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+}
+
+/* Custom Scrollbar Styling */
+.quote2-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.quote2-section::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
 }
 
 .image {
@@ -213,5 +276,59 @@ body, html {
   margin-top: 80px; /* This accounts for the height of the fixed navbar */
 }
 
-/* Other styles remain the same... */
+.about-me {
+  font-size: 0.85em; /* Adjust as necessary */
+  text-align: left;
+}
 
+.Bio-Header{
+  text-align: left;
+  font-weight: bold;
+}
+/* Updated CSS for Bottom Rectangle */
+.bottom-rectangle {
+  position: absolute;
+  top: auto;
+  bottom: 83px;
+  left: 390px;
+  transform: translateX(-50%);
+  width: 470px;
+  height: 220px; /* Matches the height of the bottom rectangle */
+  background-color: #444;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;  /* This will ensure the content doesn't spill out */
+}
+
+/* Scrollable Quote Section */
+.quote-section {
+  max-height: 200px;  /* Less than the bottom-rectangle height to accommodate padding */
+  overflow-y: auto;  /* Scroll when content is too large */
+  padding-right: 10px;  /* Add padding to avoid text clashing with scrollbar */
+  scrollbar-width: thin;  /* Thin scrollbar for Firefox */
+  padding-left: 5px;
+}
+
+/* Custom Scrollbar Styling */
+.quote-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.quote-section::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+/* Adjust the quote text */
+.quote-content {
+  font-size: 0.9em; /* Reduce font size slightly if needed */
+}
+
+/* Adjust font and spacing */
+.quote-header,
+.quote-content h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em; /* Bold and defined font size */
+}

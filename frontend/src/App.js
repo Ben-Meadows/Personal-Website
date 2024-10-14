@@ -64,7 +64,7 @@ const App = () => {
                   <Header />
                 </motion.div>
                 
-                {/* Animate the Education section, keeping the CSS class for layout */}
+                {/* Image-div */}
                 <motion.div
                   variants={fadeInUp}
                   initial="hidden"
@@ -72,10 +72,10 @@ const App = () => {
                   transition={{ duration: 0.6, delay: 0.8 }}
                   className="right-rectangle"  // Keep the original className for positioning
                 >
-                  <Education />
+                  <Image />
                 </motion.div>
                 
-                {/* Animate the Quote section, keeping the CSS class for layout */}
+                {/*Education div */}
                 <motion.div
                   variants={fadeInUp}
                   initial="hidden"
@@ -83,7 +83,7 @@ const App = () => {
                   transition={{ duration: 0.6, delay: 1 }}
                   className="bottom-rectangle"  // Keep the original className for positioning
                 >
-                  <Quote />
+                  <Education />
                 </motion.div>
                 
                 {/* Animate the Image section, keeping the CSS class for layout */}
@@ -94,7 +94,7 @@ const App = () => {
                   transition={{ duration: 0.6, delay: 1.2 }}
                   className="image-container"  // Keep the original className for positioning
                 >
-                  <Image />
+                  <Quote />
                 </motion.div>
               </div>
             }

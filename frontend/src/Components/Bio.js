@@ -10,9 +10,9 @@ function Bio() {
       transition={{ duration: 0.5, delay: 0.2 }}  // Smooth animation
       className="bio"
     >
-      <h2>Who am I?</h2>
-      <p className="text-lg">
-        Hey! 
+      <h2 className='Bio-Header'>About me</h2>
+      <p className="about-me">
+      I am a passionate developer experienced in Python,Java and I am speclized in developing full stack applications.
       </p>
     </motion.div>
   );
