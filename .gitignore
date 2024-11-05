@@ -1,0 +1,19 @@
+# Ignore Python bytecode
+*.pyc
+__pycache__/
+
+# Ignore virtual environment
+venv/
+
+# Ignore environment variables
+.env
+
+# Ignore Docker volumes and data directories
+data/
+
+# Ignore MySQL socket files
+*.sock
+
+# Ignore system-specific files and temporary files
+.DS_Store
+Thumbs.db
